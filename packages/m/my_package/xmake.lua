@@ -15,5 +15,5 @@ package("my_package")
 
     on_test(function (package)
         -- TODO check includes and interfaces
-        -- assert(package:has_cfuncs("foo", {includes = "foo.h"})
+        assert(package:has_cfuncs("foo", {includes = "foo.h"}))
     end)
