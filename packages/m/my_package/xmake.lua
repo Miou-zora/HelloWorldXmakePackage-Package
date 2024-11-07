@@ -10,6 +10,7 @@ package("my_package")
         if package:config("shared") then
             configs.kind = "shared"
         end
+        os.cp("src", package:installdir())
         import("package.tools.xmake").install(package, configs)
     end)
 
