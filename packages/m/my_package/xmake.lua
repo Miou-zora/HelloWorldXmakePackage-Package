@@ -7,8 +7,11 @@ package("my_package")
     add_versions("v1.0", "aab3a970701a263ce75a172b498f332d6a56056d")
 
     on_install(function (package)
-        os.cp("include", package:installdir())
-        os.cp("lib", package:installdir())
+        local configs = {}
+        if package:config("shared") then
+            configs.kind = "shared"
+        end
+        import("package.tools.xmake").install(package, configs)
     end)
 
     on_test(function (package)
