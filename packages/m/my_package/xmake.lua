@@ -11,7 +11,6 @@ package("my_package")
             configs.kind = "shared"
         end
         -- copy header files
-        os.cp("src/foo.h", package:installdir("include"))
         import("package.tools.xmake").install(package, configs)
     end)
 
