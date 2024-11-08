@@ -1,4 +1,4 @@
-package("my_package2")
+package("my_package")
     set_kind("static")
     set_description("The my_package package")
     set_license("MIT")
