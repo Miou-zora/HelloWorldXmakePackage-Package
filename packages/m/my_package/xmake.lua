@@ -1,5 +1,5 @@
 package("my_package")
-    set_kind("static")
+    set_kind("library")
     set_description("The my_package package")
     set_license("MIT")
 
