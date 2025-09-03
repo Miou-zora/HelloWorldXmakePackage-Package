@@ -5,6 +5,8 @@ package("my_package")
 
     add_urls("https://github.com/Miou-zora/HelloWorldXmakePackage-Lib.git")
 
+    add_versions("latest", "126bc5d6955c61afa187a7966cac9c14e58912ca")
+
     on_install(function (package)
         local configs = {}
         if package:config("shared") then
