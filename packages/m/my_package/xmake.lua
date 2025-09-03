@@ -5,7 +5,7 @@ package("my_package")
 
     add_urls("https://github.com/Miou-zora/HelloWorldXmakePackage-Lib.git")
 
-    add_versions("latest", "0db3ceba3bd12b5ac4796405519849e04e82341e")
+    add_versions("latest", "8c56698ff3736dc07261062cb97e64c712332078")
 
     on_install(function (package)
         local configs = {}
